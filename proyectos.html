@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luis Guardia — Proyectos personales</title>
+<meta name="description" content="Proyectos personales de Luis Guardia: Linux, redes, blockchain en Python y análisis de trading.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="mobile-topbar">
+  <span>~/luis-guardia</span>
+  <button id="nav-toggle">menu ▾</button>
+</div>
+
+<div class="shell">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-terminal">
+      <button type="button" class="brand terminal-trigger" aria-label="Ejecutar siguiente comando sugerido">
+        <span class="prompt">luis@guardia</span>:~$ <span class="terminal-input"></span><span class="cursor"></span>
+      </button>
+      <div class="terminal-output"></div>
+      <div class="terminal-actions">
+        <div class="terminal-cmd-list"></div>
+      </div>
+    </div>
+
+    <nav class="tree">
+      <span class="path-root">~/luis-guardia/</span>
+      <ul>
+        <li><a href="index.html">sobre-mi/</a></li>
+        <li>
+          <a href="proyectos.html" class="active">proyectos-personales/</a>
+          <ul class="sub">
+            <li><a href="#bandit">bandit</a></li>
+            <li><a href="#panama-railway">panama-railway</a></li>
+            <li><a href="#blockchain">blockchain-py</a></li>
+            <li><a href="#trading">trading-analyzer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="contact-row">📩 <a href="mailto:guardialuis714@gmail.com">guardialuis714@gmail.com</a></div>
+      <div class="contact-row">🟦 <a href="http://www.linkedin.com/in/luis-g-ba4732200" target="_blank" rel="noopener">linkedin.com/in/luis-g-ba4732200</a></div>
+      <div class="contact-row">🟥 <a href="https://github.com/Angel000Tacypoc" target="_blank" rel="noopener">github.com/Angel000Tacypoc</a></div>
+    </div>
+  </aside>
+
+  <main>
+    <h1 class="name" style="font-size:2.1rem;">Proyectos personales</h1>
+    <div class="role-sub">// ls -la ~/proyectos-personales</div>
+
+    <section class="panel" id="bandit">
+      <div class="panel-bar">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <span class="filename">bandit-linux.log</span>
+      </div>
+      <div class="panel-body">
+        <div class="section-label">Resolución de Bandit — Comandos de Linux</div>
+        <p>Resolución práctica de los retos de OverTheWire Bandit, enfocada en comandos de Linux y fundamentos de línea de comandos.</p>
+        <div class="media-frame">
+          <iframe src="https://www.youtube.com/embed/4wohTs2QZ3g" title="Resolución de Bandit - Comandos de Linux" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panama-railway">
+      <div class="panel-bar">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <span class="filename">panama-canal-railway.html</span>
+      </div>
+      <div class="panel-body">
+        <div class="section-label">Reordenamiento de la página de Panama Canal Railway</div>
+        <p>Rediseño y reordenamiento del sitio web de Panama Canal Railway.</p>
+        <a class="project-link" href="https://panamacanalrailway.netlify.app/" target="_blank" rel="noopener">Ver sitio en vivo</a>
+      </div>
+    </section>
+
+    <section class="panel" id="blockchain">
+      <div class="panel-bar">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <span class="filename">blockchain_python.py</span>
+      </div>
+      <div class="panel-body">
+        <div class="section-label">Una blockchain creada en Python puro</div>
+        <p>Implementación de una blockchain desde cero usando Python (Flask).</p>
+        <a class="project-link" href="https://github.com/Angel000Tacypoc/BlockchainPython-Flask-Postman" target="_blank" rel="noopener">Ver repositorio en GitHub</a>
+      </div>
+    </section>
+
+    <section class="panel" id="trading">
+      <div class="panel-bar">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <span class="filename">trading_analyzer.py</span>
+      </div>
+      <div class="panel-body">
+        <div class="section-label">Analizador de datos para BingX (trading de criptomonedas) con Python</div>
+        <p>Herramienta en Python para analizar datos de trading de criptomonedas desde BingX.</p>
+        <a class="project-link" href="https://github.com/Angel000Tacypoc/trading-analyzer-pro" target="_blank" rel="noopener">Ver repositorio en GitHub</a>
+        <p style="margin-top:14px;">Tiene una variante en web pero aún está en proceso.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  © 2026 Luis Guardia — Panamá. Compilado sin dependencias de servidor.
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+<script type="module">
+  import * as THREE from 'three';
+  window.THREE = THREE;
+</script>
+<script src="script.js" type="module"></script>
+</body>
+</html>
