@@ -202,6 +202,15 @@ a:hover{text-decoration:underline;}
   font-family:var(--mono);
   font-size:0.72rem;
 }
+.contact-title{
+  color:var(--amber);
+  font-family:var(--mono);
+  font-size:0.72rem;
+  font-weight:500;
+  letter-spacing:0.5px;
+  margin-bottom:12px;
+  text-transform:uppercase;
+}
 .sidebar-footer .contact-row{
   display:flex; align-items:center; gap:8px;
   margin-bottom:8px;
@@ -348,9 +357,15 @@ p:last-child{margin-bottom:0;}
   margin:14px 0;
 }
 .img-grid img{
-  width:100%; border-radius:4px; border:1px solid var(--panel-border);
+  width:100%;
+  aspect-ratio:4 / 3;
+  object-fit:cover;
+  object-position:center;
+  border-radius:4px;
+  border:1px solid var(--panel-border);
   display:block;
 }
+.img-grid img.jjk-portrait{object-position:center 68%;}
 
 .cert-grid{
   display:grid;
